@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     PROBLEMA: Lista de exercício
@@ -8,11 +9,15 @@
     */
 
     //ENTRADA
+    const joao = Number(prompt('Quantos dos 15 exercícios você conseguiu fazer João?'));
+    const pedro = Number(prompt('Quantos dos 15 exercícios você conseguiu fazer Pedro?'));
+    const rafaela = Number(prompt('Quantos dos 15 exercícios você conseguiu fazer Rafaela?'));
+    const maria = Number(prompt('Quantos dos 15 exercícios você conseguiu fazer Maria?'));
 
 
     //PROCESSAMENTO
-
-
+    const calculo = Math.round((joao + pedro + rafaela + maria) / 4);
     //SAÍDA
+    document.write(`A média de exercícios que foram resolvidos foi de ${calculo} exercícios.`);
 
 </script>

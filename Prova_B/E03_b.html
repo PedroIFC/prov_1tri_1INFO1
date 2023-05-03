@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-
+    const atividade5 = Number(prompt('Qual foi a nota que o aluno obteve na Atividade 1?'));
+    const atividade4 = Number(prompt('Qual foi a nota que esse mesmo aluno obteve na Atividade 2?'));
+    const atividade1 = Number(prompt('E qual foi a nota dele na Atividade 3?'));
 
     //PROCESSAMENTO
+    const calculo = (5 * atividade5 + 4 * atividade4 + 1 * atividade1) / (5 + 4 + 1);
 
 
     //SAÍDA
+    document.write(`A media do aluno será de ${calculo.toFixed(2)}.`);
 
 </script>

@@ -8,11 +8,15 @@
     */
 
     //ENTRADA
+    const porlitro = prompt('Informe quantos quilômetros a motocicleta consegue percorrer com cada litro de combustível:')
+    const kms = prompt('Informe a quilometragem que a motocicleta já percorreu:')
 
 
     //PROCESSAMENTO
-
+    const combustivel = Math.ceil(kms/porlitro);
+    const revisao = Math.ceil((kms/2000)*200);
 
     //SAÍDA
+    document.write(`Foram consumidos ${combustivel} litros de combustível.<br>O custo total em revisões da motocicleta foi de ${revisao.toFixed(2).replace(".",",")}`)
 
 </script>
